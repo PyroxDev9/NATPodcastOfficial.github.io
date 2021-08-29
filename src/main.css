@@ -1,0 +1,133 @@
+/* ROOT CSS */
+:root { 
+    font-size: 16px;
+}
+
+/* Default Values that applies to the WHOLE Document/Webpage */
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Body Element Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(94, 94, 94);
+    color: var(--white);
+
+    /* Variables */
+    --burple: #5865F2;
+    --green: #57F287;
+    --yellow: #FEE75C;
+    --fuchsia: #EB459E;
+    --red: #ED4245;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --navy: #001f3f;
+    --aqua: #7FDBFF;
+
+    --color-primary: #217ecf;
+	--color-primary-dark: #0d416e;
+	--color-secondary: #0b7272;
+	--color-error: #cc3333;
+	--color-success: #4bb544;
+	--color-bg-blue: rgb(64, 116, 197);
+	--color-bg-crimson: rgb(194, 54, 75);
+	--color-bg-orange: rgb(209, 80, 50);
+	--border-radius: 4px;
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: 6px;
+    overflow-y: hidden;
+}
+
+.title {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: rgb(26, 26, 26);
+    transition: color 300ms ease;
+    text-decoration: underline;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    padding: .5rem;
+}
+
+.navbar ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--navy);
+}
+
+/* .navbar ul li a:hover {
+    background: #001f3f;
+    color: white;
+    border-radius: 10px;
+    transition: background 200ms ease;
+    text-decoration: underline;
+} */
+
+.svgIcon {
+    display: flex;
+    height: 30px;
+    padding: 1rem;
+}
+
+.svgIcon:hover {
+    background: var(--white);
+    filter: opacity(0.8);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .svgIcon {
+        display: flex;
+        height: 25px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "podcastwebsitenatv5",
+  "version": "5.0.0",
+  "description": "[BETA] The Official BETA Build of the Not Atomically Thinking (NAT) Podcast Website",
+  "main": "index.js",
+  "scripts": {
+    "info": "\"PACAGE NAME: podcastwebsitenatv5\nVERSION: 5.0.0\nDESCRIPTION: [BETA] The Official BETA Build of the Not Atomically Thinking (NAT) Podcast Website\""
+  },
+  "author": "Mohammad Rahman, Samin Yasir",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.8"
+  }
+}
