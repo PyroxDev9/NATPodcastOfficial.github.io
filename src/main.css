@@ -14,7 +14,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(94, 94, 94);
+    background: rgb(24, 24, 24);
     color: var(--white);
 
     /* Variables */
@@ -28,6 +28,7 @@ body {
 
     --navy: #001f3f;
     --aqua: #7FDBFF;
+    --silver: #DDDDDD;
 
     --color-primary: #217ecf;
 	--color-primary-dark: #0d416e;
@@ -121,6 +122,61 @@ body {
     border-radius: 10px;
 }
 
+main {
+    padding: .5rem;
+    float: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.main_title {
+    font-size: 1.7rem;
+    background: -webkit-linear-gradient(45deg, rgb(28, 72, 157), rgb(43, 253, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 50%;
+}
+
+.main_text {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    width: 50%;
+}
+
+.container .flex {
+    flex-direction: row;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.natLogo {
+    height: 500px;
+    float: right;
+}
+
+.img > img {
+    float: right;
+    height: 500px;
+}
+
+code {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: var(--border-radius);
+    padding: 1px;
+    font-family: monospace;
+}
+
 @media only screen and (max-width: 800px) {
     .svgIcon {
         display: flex;
@@ -129,5 +185,25 @@ body {
 
     .title {
         font-size: 1rem;
+    }
+
+    .main_title {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .main_text {
+        font-size: .9rem;
+        width: 100%;
+    }
+
+    .img > .natLogo {
+        height: 300px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
